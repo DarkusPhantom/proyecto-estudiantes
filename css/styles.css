@@ -1,0 +1,81 @@
+/*General*/
+html {
+  box-sizing: border-box;
+}
+*, *::after, *::before {
+  box-sizing: inherit;
+  margin:0;
+  padding:0;
+}
+
+body {
+  background-color: cornflowerblue;
+}
+
+a{
+	text-decoration: none;
+}
+
+/*------Header------*/
+
+div.contenedor {
+	background-color: #222222;
+	padding: 10px 5px;
+}
+
+/*Logo*/
+.fixed{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+div.logo {
+	float: left;
+	width: 50%;
+	padding: 10px 0 10px 20px;
+	margin: auto;
+}
+
+div.logo h1{
+	font-size: 1.2em;
+	font-family: 'Calisto MT Bold', Verdana, Cambria;
+	color: white;
+	text-transform: uppercase;
+}
+
+div.buscar {
+	float: left;
+	margin-top: 10px;
+}
+
+
+nav.navegacion-principal {
+	width: 100%;
+
+}
+
+nav.navegacion-principal a {
+	display: inline-block;
+	margin: 0 5px;
+	padding: 10px 15px;
+	font-size: .9em;
+	font-family: 'Calisto MT Bold', Verdana, Cambria;
+	color: #ffffff
+}
+
+nav.navegacion-principal a:hover {
+	background-color: white;
+	color: black;
+	border-radius: 20px;
+}
+
+nav.navegacion-principal input {
+	padding: 6px;
+	border: none;
+	/*margin-top: 8px;*/
+	margin-right: 16px;
+	/*font-size: 17px;*/
+}

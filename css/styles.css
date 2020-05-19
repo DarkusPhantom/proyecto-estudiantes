@@ -197,8 +197,11 @@ ul.barra-menu li:hover {
 
 /*------------Footer--------*/
 footer {
+	width: 100%;
+	padding: 10px 15px;
 	background-color: black;
 	clear: both;
+	overflow: hidden;
 }
 
 footer p {

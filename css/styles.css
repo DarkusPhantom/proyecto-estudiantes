@@ -2,6 +2,7 @@
 html {
   box-sizing: border-box;
 }
+
 *, *::after, *::before {
   box-sizing: inherit;
   margin:0;
@@ -23,13 +24,14 @@ header div.contenedor {
 	background-color:  #222222;
 	padding: 5px 10px;
 	overflow: hidden;
+	width: 100%;
 }
 
 /*Logo*/
 
 div.logo {
 	float: left;
-	width: 50%;
+	width: 70%;
 	padding: 8px 0 0 20px;
 	margin: auto;
 }
@@ -41,17 +43,18 @@ div.logo h1{
 	text-transform: uppercase;
 }
 
-nav.navegacion-principal {
-	width: 100%;
+nav.navegacion-principal{
+	width: 30%;
+	float: left;
 }
 
 nav.navegacion-principal a {
 	display: inline-block;
-	margin: 0 5px;
+	margin-right: 8px;
 	padding: 10px 15px;
 	font-size: .9em;
 	font-family: 'Calisto MT Bold', Verdana, Cambria;
-	color: #ffffff
+	color: #ffffff;
 }
 
 nav.navegacion-principal a:hover {
@@ -59,15 +62,6 @@ nav.navegacion-principal a:hover {
 	color: black;
 	border-radius: 20px;
 	transition: all .6s ease;
-}
-
-/*Barra de busqueda*/
-#buscador{
-	padding: 6px;
-	border: none;
-	/*margin-top: 8px;*/
-	margin-right: 16px;
-	/*font-size: 17px;*/
 }
 
 /*Cuerpo de la pagina*/
@@ -80,42 +74,39 @@ div.contenido {
 	padding: 20px 10px;
 	margin-top: 10px;
 	float: right;
-	width: 75%;
+	width: 78%;
 }
 
 div.contenido div.encabezado-tabla {
 	margin-bottom: 10px;
 }
 div.contenido div.encabezado-tabla h2 {
-/*	font-family: ;			Añadir el Font Family*/
 	font-size: 1.7em;	
-	margin-left: 5px;
+	margin-bottom: 15px;
 	border-bottom: 1px solid #D5D5D5;
 }
 
-
-/*Buscar estudiante*/
-label.busqueda-estudiante {
-	margin-left: 20px;
+.buscador{
+	float: right;
+	margin-top: 7px;
+	margin-right: 13%;
 }
 
-#buscar-estudiante {
-	padding: 6px;
-	width: 35%;
+.buscador input{
+	border-radius: 5px;
+	padding: 5px 10px;
 }
-
-
 
 /*Botones*/
 .button {
-	background-color: #1E87E9;
+	background: #1E87E9;
 	padding: 10px 15px;
 	border-radius: 10px;
 	display: inline-block;
 }
 
-.button a, .editar, .eliminar, .ver {
-	font-size: .9em;
+.button a, .editar, .eliminar {
+	font-size: 1.1em;
 	text-transform: uppercase;
 	color: white;
 	font-family: Arial, Verdana, 'Times New Roman';
@@ -126,22 +117,14 @@ label.busqueda-estudiante {
 	cursor: pointer;
 }
 
-.nuevo {
-	margin-top: 10px;
+.registrar {
+	margin-top: 5px;
 }
 
-a.editar, a.eliminar, a.ver {
+.editar, .eliminar {
 	font-size: 14px;
 	padding: 10px 15px;
 	text-transform: capitalize;
-}
-
-.ver {
-	background-color: #26FF1B;
-}
-
-.ver:hover {
-	background-color: #4CFF43;
 }
 
 .eliminar {
@@ -155,7 +138,7 @@ a.editar, a.eliminar, a.ver {
 /*Tabla de datos registrados*/
 
 table thead tr th {
-	font-size: 14px;
+	font-size: 16px;
 	text-transform: capitalize;
 	font-family: Verdana, Arial, 'Times New Roman';
 	padding: 10px 15px;
@@ -166,7 +149,7 @@ table thead tr th {
 table tbody tr td {
 	text-align: center;
 	padding: 5px 10px;
-	font-size: 12px;
+	font-size: 14px;
 	font-family: Verdana, Arial;
 	text-transform: capitalize;
 
@@ -181,37 +164,35 @@ table tr:nth-child(4n-2) {
 aside {
 	background-color: #EDEBEB;
 	float: left;
-	width: 25%;
-	height: 580px;
+	width: 20%;
+	height: auto;
 }
 
 /*Barra de Menu Lateral*/
 
 ul.barra-menu {
-	margin-top: 20px;
+	margin-top: 15px;
 }
 
 ul.barra-menu li{
-	padding: 10px 15px;
-	display: block;
 	font-size: 1.2em;
 	font-family: Arial, Verdana;
+	border-bottom: .5px solid #1E87E9;
+}
+
+ul.barra-menu li a{
 	color: #1E87E9;
+	padding: 15px 20px;
+	display: block;
 }
 
-ul.barra-menu li:first {
-	
+ul.barra-menu li:nth-child(4) {
+	border:none;
 }
 
-ul.barra-menu li:nth-child(2n-1) {
-	margin-bottom: 10px;	
-}
-
-ul.barra-menu li:hover,
-ul.barra-menu li:nth-child(1) {
+ul.barra-menu li a:hover {
 	background-color: #1E87E9;
 	color: white;
-	cursor: pointer;
 }
 
 /*------------Footer--------*/

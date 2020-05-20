@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Registro Estudiantil</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<header>
+		<div class="contenedor clearfix">
+			<div class="logo">
+				<h1>Registro Estudiantil</h1>
+			</div>
+			<nav class="navegacion-principal clearfix">	
+				<input type="search" name="buscar" id="buscador" placeholder="Buscar...">
+				<a href="index.html">Inicio</a>
+				<a href="#">Informacion</a>
+				<a href="#">Materias</a>
+				<a href="#">Ayuda</a>
+			</nav>
+		</div>
+	</header>
+
+	<div class="contenedor">
+		<div class="contenido">
+			<div class="encabezado-tabla">
+				<h2>Estudiantes</h2>
+				<div class="button nuevo">
+					<a href="#">Nuevo</a>
+				</div>
+				<label for="buscar-estudiante" class="busqueda-estudiante">Buscar Estudiante: 
+					<input type="search" id="buscar-estudiante" name="buscar-estudiante" placeholder="Coloque cedula, nombre, apellido,...">
+				</label>
+				
+			</div>
+			<table>
+				<thead>
+					<tr>
+						<th>Cédula</th>
+						<th>Nombre</th>
+						<th>Apellido</th>
+						<th>Código</th>
+						<th>Materia</th>
+						<th>Notas</th>
+						<th>Turno</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>12.345.678</td>
+						<td>Maria</td>
+						<td>Delgado</td>
+						<td>CAO102</td>
+						<td>Algoritmos I</td>
+						<td>20</td>
+						<td>Dia</td>
+						<td><a href="#" class="button editar">Editar</a></td>
+						<td><a href="#" class="button ver">Ver</a></td>
+						<td><a href="#" class="button eliminar">Eliminar</a></td>
+					</tr>
+		
+					<tr>
+						<td>22.151.263</td>
+						<td>Jose Finita</td>
+						<td>Perez</td>
+						<td>TAO102</td>
+						<td>Elementos Discreto II</td>
+						<td>20</td>
+						<td>Noche</td>
+						<td><a href="#" class="button editar">Editar</a></td>
+						<td><a href="#" class="button ver">Ver</a></td>
+						<td><a href="#" class="button eliminar">Eliminar</a></td>
+					</tr>
+		
+					<tr>
+						<td>29.132.079</td>
+						<td>Nohemi</td>
+						<td>Heredia</td>
+						<td>CAO101</td>
+						<td>Fundamentos de programacion</td>
+						<td>20</td>
+						<td>Dia</td>
+						<td><a href="#" class="button editar">Editar</a></td>
+						<td><a href="#" class="button ver">Ver</a></td>
+						<td><a href="#" class="button eliminar">Eliminar</a></td>
+					</tr>
+		
+					<tr>
+						<td>23.467.765</td>
+						<td>Franco</td>
+						<td>Silva</td>
+						<td>MAO104</td>
+						<td>Calculo Vectorial</td>
+						<td>20</td>
+						<td>Noche</td>
+						<td><a href="#" class="button editar">Editar</a></td>
+						<td><a href="#" class="button ver">Ver</a></td>
+						<td><a href="#" class="button eliminar">Eliminar</a></td>
+					</tr>
+
+					<tr>
+						<td>28.941.252</td>
+						<td>Joseph</td>
+						<td>Joestar</td>
+						<td>CAO101</td>
+						<td>Fundamentos de Algoritmos</td>
+						<td>20</td>
+						<td>Dia</td>
+						<td><a href="#" class="button editar">Editar</a></td>
+						<td><a href="#" class="button ver">Ver</a></td>
+						<td><a href="#" class="button eliminar">Eliminar</a></td>
+					</tr>
+
+					<tr>
+						<td>20.499.824</td>
+						<td>Brenda Noelle</td>
+						<td>Tovar Romero</td>
+						<td>PAO101</td>
+						<td>Programacion I</td>
+						<td>20</td>
+						<td>Noche</td>
+						<td><a href="#" class="button editar">Editar</a></td>
+						<td><a href="#" class="button ver">Ver</a></td>
+						<td><a href="#" class="button eliminar">Eliminar</a></td>
+					</tr>
+
+					<tr>
+						<td>22.000.231</td>
+						<td>Ricardo</td>
+						<td>Milos</td>
+						<td>PAO101</td>
+						<td>Programacion I</td>
+						<td>20</td>
+						<td>Dia</td>
+						<td><a href="#" class="button editar">Editar</a></td>
+						<td><a href="#" class="button ver">Ver</a></td>
+						<td><a href="#" class="button eliminar">Eliminar</a></td>
+					</tr>
+
+					<tr>
+						<td>24.089.422</td>
+						<td>Luis Miguel</td>
+						<td>Blanco</td>
+						<td>MAO101</td>
+						<td>Calculo I</td>
+						<td>20</td>
+						<td>Noche</td>
+						<td><a href="#" class="button editar">Editar</a></td>
+						<td><a href="#" class="button ver">Ver</a></td>
+						<td><a href="#" class="button eliminar">Eliminar</a></td>
+					</tr>
+
+				</tbody>
+			</table>
+		</div>
+		<aside>
+			<ul class="barra-menu">
+				<li>Estudiantes</li>
+				<li>Profesor</li>
+				<li>Materia</li>
+				<li>Material de Apoyo</li>
+			</ul>
+		</aside>
+	</div>
+
+	<footer class="clearfix">
+		<p>Todos los derechos reservados por Luis Rodriguez y Jhonattan Garcia &copy;</p>
+	</footer>
+
+</body>
+</html>

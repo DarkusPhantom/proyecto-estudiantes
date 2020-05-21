@@ -2,6 +2,7 @@
 html {
   box-sizing: border-box;
 }
+
 *, *::after, *::before {
   box-sizing: inherit;
   margin:0;
@@ -18,45 +19,47 @@ a{
 
 
 /*------Header------*/
-
+header {
+	width: 100%;
+	position: fixed; /* Set the navbar to fixed position */
+	top: 0; /* Position the navbar at the top of the page */
+}
 header div.contenedor {
 	background-color:  #222222;
 	padding: 5px 10px;
 	overflow: hidden;
+	
 }
 
 /*Logo*/
 
 div.logo {
 	float: left;
-	width: 50%;
+	width: 70%;
 	padding: 8px 0 0 20px;
 	margin: auto;
 }
 
-div.logo h1{
-	font-size: 1.2em;
+div.logo h2 a{
+	font-size: .9em;
 	font-family: 'Calisto MT Bold', Verdana, Cambria;
 	color: white;
 	text-transform: uppercase;
+	line-height: 1px;
 }
 
-div.buscar {
+nav.navegacion-principal{
+	width: 30%;
 	float: left;
-	margin-top: 10px;
-}
-
-nav.navegacion-principal {
-	width: 100%;
 }
 
 nav.navegacion-principal a {
 	display: inline-block;
-	margin: 0 5px;
+	margin-right: 8px;
 	padding: 10px 15px;
 	font-size: .9em;
 	font-family: 'Calisto MT Bold', Verdana, Cambria;
-	color: #ffffff
+	color: #ffffff;
 }
 
 nav.navegacion-principal a:hover {
@@ -66,42 +69,69 @@ nav.navegacion-principal a:hover {
 	transition: all .6s ease;
 }
 
-nav.navegacion-principal input {
-	padding: 6px;
-	border: none;
-	/*margin-top: 8px;*/
-	margin-right: 16px;
-	/*font-size: 17px;*/
+/*Intro de la pagina en index.html*/
+div.introduccion {
+	padding: auto;
+}
+
+div.introduccion h2{
+	margin-bottom: 10px;	
+	font-size: 2.3em;
+	/*font-family: ; Colocarle fuente*/
+	text-align: center;
+}
+
+div.introduccion p {
+	text-align: justify;
+	padding: 10px 15px;
+	box-shadow: 0px 30px 30px #666;
+	border: 5px solid #1E87E9;
 }
 
 /*Cuerpo de la pagina*/
+div.contenedor.cuerpo {
+	width: 100%;
+	height: 100%;
+	margin-top: 30px;
+}
+
 div.contenido {
 	padding: 20px 10px;
 	margin-top: 10px;
 	float: right;
-	width: 75%;
+	width: 78%;
+	height: 1000px;
 }
 
 div.contenido div.encabezado-tabla {
 	margin-bottom: 10px;
 }
 div.contenido div.encabezado-tabla h2 {
-/*	font-family: ;			Añadir el Font Family*/
 	font-size: 1.7em;	
-	margin-left: 5px;
+	margin-bottom: 15px;
 	border-bottom: 1px solid #D5D5D5;
 }
 
+.buscador{
+	float: right;
+	margin-top: 7px;
+	margin-right: 13%;
+}
+
+.buscador input{
+	border-radius: 5px;
+	padding: 5px 10px;
+}
 
 /*Botones*/
 .button {
-	background-color: #1E87E9;
+	background: #1E87E9;
 	padding: 10px 15px;
 	border-radius: 10px;
 	display: inline-block;
 }
 
-.button a, .editar, .eliminar, .ver {
+.button a, .editar, .eliminar {
 	font-size: 1.1em;
 	text-transform: uppercase;
 	color: white;
@@ -113,22 +143,14 @@ div.contenido div.encabezado-tabla h2 {
 	cursor: pointer;
 }
 
-.nuevo {
-	margin-top: 10px;
+.registrar {
+	margin-top: 5px;
 }
 
-a.editar, a.eliminar, a.ver {
+.editar, .eliminar {
 	font-size: 14px;
 	padding: 10px 15px;
 	text-transform: capitalize;
-}
-
-.ver {
-	background-color: #26FF1B;
-}
-
-.ver:hover {
-	background-color: #4CFF43;
 }
 
 .eliminar {
@@ -168,39 +190,74 @@ table tr:nth-child(4n-2) {
 aside {
 	background-color: #EDEBEB;
 	float: left;
-	width: 25%;
-	height: 580px;
+	width: 20%;
+	height: 100%; /* Full-height: remove this if you want "auto" height */
+	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+	left: 0;
+	top: 48px;
 }
 
 /*Barra de Menu Lateral*/
 
 ul.barra-menu {
-	margin-top: 20px;
+	margin-top: 15px;
 }
 
 ul.barra-menu li{
-	padding: 10px 15px;
-	display: block;
 	font-size: 1.2em;
 	font-family: Arial, Verdana;
+	border-bottom: .5px solid #1E87E9;
+}
+
+ul.barra-menu li a{
 	color: #1E87E9;
+	padding: 15px 20px;
+	display: block;  
+	transition: all .3s ease;
 }
 
-ul.barra-menu li:nth-child(2n-1) {
-	margin-bottom: 10px;	
+ul.barra-menu li:nth-child(4) {
+	border:none;
 }
 
-ul.barra-menu li:hover {
+ul.barra-menu li a:hover {
 	background-color: #1E87E9;
 	color: white;
 }
 
+/* Pagination links */
+.pagination {
+	width: 50%;
+}
+
+.pagination a {
+	color: #1E87E9;
+	float: left;
+	padding: 8px 16px;
+	transition: background-color .3s;
+	margin: 15px 5px;
+	border-radius:40%;
+}
+
+/* Style the active/current link */
+.pagination a.active {
+	background-color: dodgerblue;
+	color: white;
+}
+
+/* Add a blue background color on mouse-over */
+.pagination a:hover:not(.active) {
+	background-color: #1E87E9; 
+	color: white;
+}
+
+
 /*------------Footer--------*/
 footer {
-	width: 100%;
+	width: 80%;
 	padding: 10px 15px;
 	background-color: black;
-	clear: both;
+	float: right;
 	overflow: hidden;
 }
 

@@ -40,11 +40,12 @@ div.logo {
 	margin: auto;
 }
 
-div.logo h1{
-	font-size: 1.2em;
+div.logo h2 a{
+	font-size: .9em;
 	font-family: 'Calisto MT Bold', Verdana, Cambria;
 	color: white;
 	text-transform: uppercase;
+	line-height: 1px;
 }
 
 nav.navegacion-principal{
@@ -66,6 +67,25 @@ nav.navegacion-principal a:hover {
 	color: black;
 	border-radius: 20px;
 	transition: all .6s ease;
+}
+
+/*Intro de la pagina en index.html*/
+div.introduccion {
+	padding: auto;
+}
+
+div.introduccion h2{
+	margin-bottom: 10px;	
+	font-size: 2.3em;
+	/*font-family: ; Colocarle fuente*/
+	text-align: center;
+}
+
+div.introduccion p {
+	text-align: justify;
+	padding: 10px 15px;
+	box-shadow: 0px 30px 30px #666;
+	border: 5px solid #1E87E9;
 }
 
 /*Cuerpo de la pagina*/
@@ -192,7 +212,8 @@ ul.barra-menu li{
 ul.barra-menu li a{
 	color: #1E87E9;
 	padding: 15px 20px;
-	display: block;
+	display: block;  
+	transition: all .3s ease;
 }
 
 ul.barra-menu li:nth-child(4) {
@@ -205,23 +226,30 @@ ul.barra-menu li a:hover {
 }
 
 /* Pagination links */
+.pagination {
+	width: 50%;
+}
 
 .pagination a {
-  color: black;
-  float: left;
-  padding: 8px 16px;
-  text-decoration: none;
-  transition: background-color .3s;
+	color: #1E87E9;
+	float: left;
+	padding: 8px 16px;
+	transition: background-color .3s;
+	margin: 15px 5px;
+	border-radius:40%;
 }
 
 /* Style the active/current link */
 .pagination a.active {
-  background-color: dodgerblue;
-  color: white;
+	background-color: dodgerblue;
+	color: white;
 }
 
-/* Add a grey background color on mouse-over */
-.pagination a:hover:not(.active) {background-color: #ddd;}
+/* Add a blue background color on mouse-over */
+.pagination a:hover:not(.active) {
+	background-color: #1E87E9; 
+	color: white;
+}
 
 
 /*------------Footer--------*/

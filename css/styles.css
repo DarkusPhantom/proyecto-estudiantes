@@ -36,7 +36,7 @@ header div.contenedor {
 div.logo {
 	float: left;
 	width: 70%;
-	padding: 8px 0 0 20px;
+	padding: 8px 0 0 13px;
 	margin: auto;
 }
 
@@ -46,6 +46,7 @@ div.logo h2 a{
 	color: white;
 	text-transform: uppercase;
 	line-height: 1px;
+	letter-spacing: 5px;
 }
 
 nav.navegacion-principal{
@@ -96,6 +97,7 @@ div.introduccion p {
 	padding: 10px 15px;
 	box-shadow: 0px 30px 30px #666;
 	border: 5px solid #1E87E9;
+	text-indent: 50px; /*Le añade una tabulacion de 50px*/
 }
 
 /*Cuerpo de la pagina*/

@@ -2,20 +2,20 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Registro Estudiantil</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Universidad de Carabobo</title>
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 	<header>
 		<div class="contenedor clearfix">
 			<div class="logo">
-				<h1>Registro Estudiantil</h1>
+				<h2><a href="index.php">Universidad de Carabobo</a></h2>
 			</div>
 			<nav class="navegacion-principal clearfix">	
-				<input type="search" name="buscar" id="buscador" placeholder="Buscar">
-				<a href="index.html">Inicio</a>
+				<a href="index.php">Inicio</a>
 				<a href="#">Informacion</a>
-				<a href="#">Materias</a>
+				<a href="#">Contacto</a>
 				<a href="#">Ayuda</a>
 			</nav>
 		</div>

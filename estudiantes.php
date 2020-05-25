@@ -1,13 +1,3 @@
-<?php
-	try {
-		require_once 'includes/functions/bd_conexion.php';
-		$sql = 'SELECT * FROM `alumno` ';
-		$resultado = $conn->query($sql);
-	} catch (Exception $e) {
-		$error = $e->getMessage();
-	}
-?>
-
 <?php include_once 'includes/templates/header.php'; ?>
 
 	<div class="contenedor cuerpo">
@@ -38,18 +28,34 @@
 
 				<tbody>
 					<?php
+						try {
+							require_once 'includes/functions/bd_conexion.php';
+							$sql = 'SELECT * FROM `alumno` ';
+							$resultado = $conn->query($sql);
+						} catch (Exception $e) {
+							$error = $e->getMessage();
+						}
+
+						$inicio_tabla = 0;
+						$maximo_tabla = 10;
 						while ($estudiantes = $resultado->fetch_assoc()): //Inicio While?> 
-							<tr>
-								<td><?php echo $estudiantes['ci']; ?></td>
-								<td><?php echo $estudiantes['nombre']; ?></td>
-								<td><?php echo $estudiantes['apellido']; ?></td>
-								<td><?php echo $estudiantes['edad']; ?></td>
-								<td><?php echo $estudiantes['sexo']; ?></td>
-								<td><?php echo $estudiantes['carrera']; ?></td>
-								<td><?php echo $estudiantes['semestre']; ?></td>
-								<td><a href="#" class="button editar">Editar</a></td>
-								<td><a href="#" class="button eliminar">Eliminar</a></td>
-							</tr>
+							<?php if ($inicio_tabla == $maximo_tabla) { 
+								$inicio_tabla = $maximo_tabla;
+								$maximo_tabla = 10;
+							} else {?>
+								<tr>
+									<td><?php echo $estudiantes['ci']; ?></td>
+									<td><?php echo $estudiantes['nombre']; ?></td>
+									<td><?php echo $estudiantes['apellido']; ?></td>
+									<td><?php echo $estudiantes['edad']; ?></td>
+									<td><?php echo $estudiantes['sexo']; ?></td>
+									<td><?php echo $estudiantes['carrera']; ?></td>
+									<td><?php echo $estudiantes['semestre']; ?></td>
+									<td><a href="editar.php" class="button editar">Editar</a></td>
+									<td><a href="#" class="button eliminar">Eliminar</a></td>
+								</tr>
+							<?php } ?>
+							 
 					<?php endwhile; //Fin While ?>				
 				</tbody>
 			</table>

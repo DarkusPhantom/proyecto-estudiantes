@@ -13,7 +13,7 @@
 					<input type="search" id="buscar-estudiante" name="buscar-estudiante" placeholder="Cedula">
 				</div>
 			</div>
-			<table>
+			<table id="profesores">
 				<thead>
 					<tr>
 						<th>Cédula</th>

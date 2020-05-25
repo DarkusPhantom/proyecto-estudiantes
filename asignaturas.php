@@ -9,7 +9,7 @@
 					<input type="search" id="buscar-estudiante" name="buscar-estudiante" placeholder="'Codigo,nombre...'">
 				</div>
 			</div>
-			<table>
+			<table id="asignaturas" class="ocultar">
 				<thead>
 					<tr>
 						<th>Código</th>

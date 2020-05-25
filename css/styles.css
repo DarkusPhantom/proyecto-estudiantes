@@ -109,7 +109,7 @@ div.contenedor.cuerpo {
 	margin-top: 30px;
 }
 
-div.contenido {
+div.contenido, div.contenido-tabla {
 	padding: 20px 10px;
 	margin-top: 10px;
 	float: right;
@@ -117,7 +117,7 @@ div.contenido {
 	height: 1000px;
 }
 
-div.contenido div.encabezado-tabla h2 {
+div.contenido-tabla div.encabezado-tabla h2 {
 	font-size: 1.7em;
 	border-bottom: 1px solid #D5D5D5;
 }

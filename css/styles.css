@@ -153,7 +153,7 @@ div.contenido div.encabezado-tabla h2 {
 	cursor: pointer;
 }
 
-.registrar {
+div.registrar {
 	margin-top: 5px;
 }
 
@@ -172,7 +172,10 @@ div.contenido div.encabezado-tabla h2 {
 }
 
 /*Tabla de datos registrados*/
-table {margin-top: 10px;}
+table {
+	margin-top: 10px;
+	width: 50%;
+}
 table thead tr th {
 	font-size: 16px;
 	text-transform: capitalize;
@@ -208,6 +211,8 @@ nav.navegacion-vertical {
 }
 
 /*Barra de Menu Lateral*/
+nav.navegacion-vertical ul{	margin-top: 10px;}
+
 nav.navegacion-vertical ul li{
 	font-size: 1.2em;
 	font-family: Arial, Verdana;
@@ -219,9 +224,7 @@ nav.navegacion-vertical ul li{
 	cursor: pointer;
 }
 
-nav.navegacion-vertical ul li:nth-child(4) {
-	border:none;
-}
+nav.navegacion-vertical ul li:nth-child(4) { border:none;}
 
 nav.navegacion-vertical ul li:hover {
 	background-color: #1E87E9;
@@ -231,11 +234,10 @@ nav.navegacion-vertical ul li:hover {
 .activo:not(.active) {
 	background-color: #1E87E9;
 	color: white;
+	cursor: default;
 }
 /* Pagination links */
-.pagination {
-	width: 50%;
-}
+.pagination { width: 50%; }
 
 .pagination a {
 	color: #1E87E9;

@@ -4,14 +4,13 @@
 		<div class="contenido">
 			<div class="encabezado-tabla">
 				<h2>Estudiantes</h2>
-				<div class="button registrar">
+			</div>
+			<div class="button registrar">
 					<a href="#">Registrar</a>
-				</div>
-
-				<div class="buscador">
-					<label for="buscar-estudiante" class="busqueda-estudiante">Buscar Estudiante:</label>
-					<input type="search" id="buscar-estudiante" name="buscar-estudiante" placeholder="Cedula">
-				</div>
+			</div>
+			<div class="buscador">
+				<label for="buscar-estudiante" class="busqueda-estudiante">Buscar Estudiante:</label>
+				<input type="search" id="buscar-estudiante" name="buscar-estudiante" placeholder="Cedula">
 			</div>
 			<table>
 				<thead>

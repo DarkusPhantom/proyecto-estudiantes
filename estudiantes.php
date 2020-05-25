@@ -28,15 +28,14 @@
 
 				<tbody>
 					<?php
-	try {
-		require_once 'includes/functions/bd_conexion.php';
-		$sql = 'SELECT * FROM `alumno` ';
-		$resultado = $conn->query($sql);
-	} catch (Exception $e) {
-		$error = $e->getMessage();
-	}
-?>
-					<?php
+						try {
+							require_once 'includes/functions/bd_conexion.php';
+							$sql = 'SELECT * FROM `alumno` ';
+							$resultado = $conn->query($sql);
+						} catch (Exception $e) {
+							$error = $e->getMessage();
+						}
+
 						$inicio_tabla = 0;
 						$maximo_tabla = 10;
 						while ($estudiantes = $resultado->fetch_assoc()): //Inicio While?> 

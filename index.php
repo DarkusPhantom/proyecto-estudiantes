@@ -1,20 +1,5 @@
 <?php include_once 'includes/templates/header.php'; ?>
 
-<body>
-	<header>
-		<div class="contenedor clearfix">
-			<div class="logo">
-				<h2><a href="index.html">Universidad de Carabobo</a></h2>
-			</div>
-			<nav class="navegacion-principal clearfix">	
-				<a href="index.php">Inicio</a>
-				<a href="#">Informacion</a>
-				<a href="#">Contacto</a>
-				<a href="#">Ayuda</a>
-			</nav>
-		</div>
-	</header>
-
 	<div class="contenedor cuerpo">
 		<div class="contenido">
 			<h2>Bienvenido a la Universidad de Carabobo</h2>

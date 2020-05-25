@@ -36,26 +36,18 @@
 							$error = $e->getMessage();
 						}
 
-						$inicio_tabla = 0;
-						$maximo_tabla = 10;
 						while ($estudiantes = $resultado->fetch_assoc()): //Inicio While?> 
-							<?php if ($inicio_tabla == $maximo_tabla) { 
-								$inicio_tabla = $maximo_tabla;
-								$maximo_tabla = 10;
-							} else {?>
-								<tr>
-									<td><?php echo $estudiantes['ci']; ?></td>
-									<td><?php echo $estudiantes['nombre']; ?></td>
-									<td><?php echo $estudiantes['apellido']; ?></td>
-									<td><?php echo $estudiantes['edad']; ?></td>
-									<td><?php echo $estudiantes['sexo']; ?></td>
-									<td><?php echo $estudiantes['carrera']; ?></td>
-									<td><?php echo $estudiantes['semestre']; ?></td>
-									<td><a href="editar.php" class="button editar">Editar</a></td>
-									<td><a href="#" class="button eliminar">Eliminar</a></td>
-								</tr>
-							<?php } ?>
-							 
+							<tr>
+								<td><?php echo $estudiantes['ci']; ?></td>
+								<td><?php echo $estudiantes['nombre']; ?></td>
+								<td><?php echo $estudiantes['apellido']; ?></td>
+								<td><?php echo $estudiantes['edad']; ?></td>
+								<td><?php echo $estudiantes['sexo']; ?></td>
+								<td><?php echo $estudiantes['carrera']; ?></td>
+								<td><?php echo $estudiantes['semestre']; ?></td>
+								<td><a href="editar.php" class="button editar">Editar</a></td>
+								<td><a href="#" class="button eliminar">Eliminar</a></td>
+							</tr>		 
 					<?php endwhile; //Fin While ?>				
 				</tbody>
 			</table>

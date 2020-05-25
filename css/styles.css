@@ -17,6 +17,8 @@ a{
 	text-decoration: none;
 }
 
+table.ocultar { display: none; }
+
 
 /*------Header------*/
 header {

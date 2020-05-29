@@ -1,7 +1,7 @@
 <?php include_once 'includes/templates/header.php'; ?>
 
-	<div class="contenedor cuerpo">
-		<div class="contenido">
+	<div class="contenedor">
+		<div class="contenido" id="info-principal">
 			<h2>Bienvenido a la Universidad de Carabobo</h2>
 			<p class="presentacion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam neque non blanditiis at consectetur sint aspernatur consequuntur, sequi illo ex praesentium ullam similique quo distinctio earum autem, vel placeat architecto?</p>
 			<p class="presentacion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam neque non blanditiis at consectetur sint aspernatur consequuntur, sequi illo ex praesentium ullam similique quo distinctio earum autem, vel placeat architecto?</p>
@@ -19,7 +19,7 @@
 				<label for="buscar-estudiante" class="busqueda-estudiante">Buscar:</label>
 				<input type="search" id="buscar-estudiante" name="buscar-estudiante" placeholder="Buscar...">
 			</div>
-			<table id="estudiantes">
+			<table id="estudiantes" class="tabla-datos">
 				<thead>
 					<tr>
 						<th>Cédula</th>
@@ -59,7 +59,7 @@
 			</table>
 
 
-			<table id="profesores" class="ocultar">
+			<table id="profesores" class="tabla-datos ocultar">
 				<thead>
 					<tr>
 						<th>Cédula</th>
@@ -94,7 +94,7 @@
 			</table>
 
 
-			<table id="asignaturas" class="ocultar">
+			<table id="asignaturas" class="tabla-datos ocultar">
 				<thead>
 					<tr>
 						<th>Código</th>
@@ -124,7 +124,7 @@
 				</tbody>
 			</table>
 
-			<table id="notas" class="ocultar">
+			<table id="notas" class="tabla-datos ocultar">
 				<thead>
 					<tr>
 						<th>Cédula</th>

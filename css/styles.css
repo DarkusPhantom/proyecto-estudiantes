@@ -26,7 +26,7 @@ header {
 	position: fixed; /* Set the navbar to fixed position */
 	top: 0; /* Position the navbar at the top of the page */
 }
-header div.contenedor {
+header div.encabezado {
 	background-color:  #222222;
 	padding: 5px 10px;
 	overflow: hidden;
@@ -103,7 +103,7 @@ div.introduccion p {
 }
 
 /*Cuerpo de la pagina*/
-div.contenedor.cuerpo {
+div.contenedor {
 	width: 100%;
 	height: 100%;
 	margin-top: 30px;

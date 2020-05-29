@@ -8,7 +8,7 @@
 </head>
 <body>
 	<header>
-		<div class="contenedor clearfix">
+		<div class="encabezado clearfix">
 			<div class="logo">
 				<h2><a href="index.php">Universidad de Carabobo</a></h2>
 			</div>

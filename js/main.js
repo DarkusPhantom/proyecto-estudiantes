@@ -1,4 +1,34 @@
-function openCity(evt, cityName) {
+
+document.querySelector('.navegacion-vertical').addEventListener('click', mostrarEnPantalla);
+
+function mostrarEnPantalla() {
+  let ocultar, contenido_principal, indice, tabla_datos;
+
+  ocultar = document.getElementsByClassName('ocultar');
+  contenido_principal = document.getElementById('info-principal');
+  
+  if (contenido_principal.classList === 'ocultar') {
+    console.log('tiene la clase');
+  } else{
+    contenido_principal.classList.add('ocultar');
+  }
+
+  tabla_datos = document.getElementsByClassName('tabla-datos');
+  
+  console.log(tabla_datos);
+
+  for (indice = 0; indice < tabla_datos.length; indice++) {
+    console.log(tabla_datos[indice]);
+  }
+
+}
+
+
+
+
+
+
+/*function openCity(evt, cityName) {
   // Declare all variables
   var i, tabcontent, tablinks;
 
@@ -17,4 +47,4 @@ function openCity(evt, cityName) {
   // Show the current tab, and add an "active" class to the link that opened the tab
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
-}
+}*/

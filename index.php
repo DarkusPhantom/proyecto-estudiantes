@@ -8,9 +8,9 @@
 			<p class="presentacion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam neque non blanditiis at consectetur sint aspernatur consequuntur, sequi illo ex praesentium ullam similique quo distinctio earum autem, vel placeat architecto?</p>
 		</div>
 
-		<div class="contenido-tabla ocultar">
+		<div id="contenido-tabla" class="ocultar">
 			<div class="encabezado-tabla">
-				<h2 class="nombre-tabla">Estudiantes</h2>
+				<h2 id="nombre_tabla" class="nombre-tabla">Estudiantes</h2>
 			</div>
 			<div class="button registrar">
 					<a href="#">Registrar</a>
@@ -19,7 +19,8 @@
 				<label for="buscar-estudiante" class="busqueda-estudiante">Buscar:</label>
 				<input type="search" id="buscar-estudiante" name="buscar-estudiante" placeholder="Buscar...">
 			</div>
-			<table id="estudiantes" class="tabla-datos">
+
+			<table id="estudiantes" class="tabla_datos ocultar">
 				<thead>
 					<tr>
 						<th>Cédula</th>
@@ -59,7 +60,7 @@
 			</table>
 
 
-			<table id="profesores" class="tabla-datos ocultar">
+			<table id="profesores" class="tabla_datos ocultar">
 				<thead>
 					<tr>
 						<th>Cédula</th>
@@ -94,7 +95,7 @@
 			</table>
 
 
-			<table id="asignaturas" class="tabla-datos ocultar">
+			<table id="asignaturas" class="tabla_datos ocultar">
 				<thead>
 					<tr>
 						<th>Código</th>
@@ -124,7 +125,7 @@
 				</tbody>
 			</table>
 
-			<table id="notas" class="tabla-datos ocultar">
+			<table id="notas" class="tabla_datos ocultar">
 				<thead>
 					<tr>
 						<th>Cédula</th>
@@ -153,6 +154,7 @@
 					<?php endwhile; //Fin While ?>				
 				</tbody>
 			</table>
+
 			<div class="pagination">
 				<a href="#">&laquo;</a>
 				<a class="active" href="#">1</a>
@@ -162,7 +164,7 @@
 				<a href="#">5</a>
 				<a href="#">6</a>
 				<a href="#">&raquo;</a>
-			</div>-->
+			</div>
 		</div>
 	
 		<?php include_once 'includes/templates/navegacion-vertical.php'; ?>

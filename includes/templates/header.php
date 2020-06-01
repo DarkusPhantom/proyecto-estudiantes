@@ -13,7 +13,7 @@
 				<h2><a href="index.php">Universidad de Carabobo</a></h2>
 			</div>
 			<nav class="navegacion-principal clearfix">	
-				<a href="index.php">Inicio</a>
+				<a href="#">Inicio</a>
 				<a href="#">Informacion</a>
 				<a href="#">Contacto</a>
 				<a href="#">Ayuda</a>

@@ -2,12 +2,9 @@
 var navegacion_vertical = document.querySelector('.navegacion-vertical');
 
 
-
 //Event Listener
 //Mostrando y ocultando tablas
 navegacion_vertical.addEventListener('click', mostrarEnPantalla,);
-
-
 
 
 //Funciones
@@ -32,6 +29,9 @@ function mostrarEnPantalla(evt) {
          mostrarElemento(tabla_datos[i]);
          let nombre_tabla = document.getElementById('nombre_tabla');
          cambiarTitulo(navegacion_vertical[i], nombre_tabla);
+         console.log(navegacion_vertical[i]);
+         navegacion_vertical[i].style.backgroundColor = "#1E87E9";
+         navegacion_vertical[i].style.color = "white";
       } else {
         ocultarElemento(tabla_datos[i]);
       }
@@ -49,82 +49,3 @@ function ocultarElemento(elemento) {
 function cambiarTitulo(elementoActual, elementoCambiar) {
   elementoCambiar.innerText = elementoActual.innerText;
 }
-/*
-switch(tabla_datos.id){
-    case 'estudiantes':
-      for (var i = 0; i < estudiantes.classList.length; i++) {
-        if (estudiantes.classList[i] != 'ocultar') {
-          ocultarElemento(estudiantes);
-        }
-      }
-    break;
-    
-  }
-*/
-
-
-
-
-
-
-
-
-
- /* for (var i = 0; i < listaClasesElemento.length; i++) {
-    if (listaClasesElemento[i] === 'ocultar') {
-      console.log('Funcionaaaaaaaaaa');
-    }else {
-      console.log('funcionazo');
-    }
-  }*/
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-function openCity(evt, cityName) {
-  // Declare all variables
-  var i, tabcontent, tablinks;
-
-  // Get all elements with class="tabcontent" and hide them
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-
-  // Get all elements with class="tablinks" and remove the class "active"
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-
-  // Show the current tab, and add an "active" class to the link that opened the tab
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-
-*/

@@ -29,9 +29,6 @@ function mostrarEnPantalla(evt) {
          mostrarElemento(tabla_datos[i]);
          let nombre_tabla = document.getElementById('nombre_tabla');
          cambiarTitulo(navegacion_vertical[i], nombre_tabla);
-         console.log(navegacion_vertical[i]);
-         navegacion_vertical[i].style.backgroundColor = "#1E87E9";
-         navegacion_vertical[i].style.color = "white";
       } else {
         ocultarElemento(tabla_datos[i]);
       }
@@ -40,10 +37,12 @@ function mostrarEnPantalla(evt) {
 
 function mostrarElemento(elemento) {
   elemento.classList.remove('ocultar');
+
 }
 
 function ocultarElemento(elemento) {
   elemento.classList.add('ocultar');
+
 }
 
 function cambiarTitulo(elementoActual, elementoCambiar) {

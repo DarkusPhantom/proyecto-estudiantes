@@ -249,7 +249,7 @@ nav.navegacion-vertical ul li:hover {
 }
 
 /* Style the active/current link */
-.pagination a.active {
+.active {
 	background-color: dodgerblue;
 	color: white;
 }

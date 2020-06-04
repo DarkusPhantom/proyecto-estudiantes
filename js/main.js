@@ -2,9 +2,12 @@
 var navegacion_vertical = document.querySelector('.navegacion-vertical');
 
 
+
 //Event Listener
 //Mostrando y ocultando tablas
 navegacion_vertical.addEventListener('click', mostrarEnPantalla,);
+
+
 
 
 //Funciones
@@ -37,12 +40,10 @@ function mostrarEnPantalla(evt) {
 
 function mostrarElemento(elemento) {
   elemento.classList.remove('ocultar');
-
 }
 
 function ocultarElemento(elemento) {
   elemento.classList.add('ocultar');
-
 }
 
 function cambiarTitulo(elementoActual, elementoCambiar) {

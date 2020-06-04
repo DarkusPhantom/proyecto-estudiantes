@@ -1,16 +1,18 @@
 <div id="contenido-tabla" class="ocultar">
+	<!--Encabezado de la tabla-->
 	<div class="encabezado-tabla">
 		<h2 id="nombre_tabla" class="nombre-tabla">Estudiantes</h2>
 	</div>
-	<div class="button registrar">
-		<a href="#">Registrar</a>
-	</div>
 	
+	<!--Boton de registro-->
+	<a id="registrar" class="button">Registrar</a>
+		
 	<div class="buscador">
 		<label for="buscar-estudiante" class="busqueda-estudiante">Buscar:</label>
 		<input type="search" id="buscar-estudiante" name="buscar-estudiante" placeholder="Buscar...">
 	</div>
 
+	<!--Tabla estudiantes-->
 	<table id="estudiantes" class="tabla_datos ocultar">
 		<thead>
 			<tr>
@@ -43,14 +45,14 @@
 						<td><?php echo $estudiantes['sexo']; ?></td>
 						<td><?php echo $estudiantes['carrera']; ?></td>
 						<td><?php echo $estudiantes['semestre']; ?></td>
-						<td><a href="editar.php" class="button editar">Editar</a></td>
-						<td><a href="#" class="button eliminar">Eliminar</a></td>
+						<td><a id="editar" class="button">Editar</a></td>
+						<td><a id="eliminar" class="button">Eliminar</a></td>
 					</tr>		 
 			<?php endwhile; //Fin While ?>				
 		</tbody>
-	</table>
+	</table><!--Tabla estudiantes-->
 
-
+	<!--Tabla profesores-->
 	<table id="profesores" class="tabla_datos ocultar">
 		<thead>
 			<tr>
@@ -78,14 +80,14 @@
 						<td><?php echo utf8_encode($docentes['nombre-d']); ?></td>
 						<td><?php echo utf8_encode($docentes['apellido-d']); ?></td>
 						<td><?php echo $docentes['sexo-d']; ?></td>
-						<td><a href="editar.php" class="button editar">Editar</a></td>
-						<td><a href="#" class="button eliminar">Eliminar</a></td>
+						<td><a id="editar" class="button">Editar</a></td>
+						<td><a id="eliminar" class="button">Eliminar</a></td>
 					</tr>		 
 			<?php  endwhile; //Fin While ?>				
 		</tbody>
-	</table>
+	</table><!--Tabla profesores-->
 
-
+	<!--Tabla asignaturas-->
 	<table id="asignaturas" class="tabla_datos ocultar">
 		<thead>
 			<tr>
@@ -114,8 +116,9 @@
 					</tr>		 
 			<?php endwhile; //Fin While ?>				
 		</tbody>
-	</table>
+	</table><!--Tabla asignaturas-->
 
+	<!--Tabla notas-->
 	<table id="notas" class="tabla_datos ocultar">
 		<thead>
 			<tr>
@@ -144,11 +147,11 @@
 					</tr>		 
 			<?php endwhile; //Fin While ?>				
 		</tbody>
-	</table>
+	</table><!--Tabla notas-->
 
 	<div class="pagination">
 		<a href="#">&laquo;</a>
-		<a class="active" href="#">1</a>
+		<a href="#">1</a>
 		<a href="#">2</a>
 		<a href="#">3</a>
 		<a href="#">4</a>

@@ -118,14 +118,15 @@ div.contenido, div#contenido-tabla {
 }
 
 div#contenido-tabla div.encabezado-tabla h2 {
+	width: 95%;
 	font-size: 1.7em;
 	border-bottom: 1px solid #D5D5D5;
 }
 
 .buscador{
 	float: right;
-	margin-top: 7px;
-	margin-right: 13%;
+	margin-top: 10px;
+	margin-right: 7%;
 }
 
 .buscador input{
@@ -135,47 +136,56 @@ div#contenido-tabla div.encabezado-tabla h2 {
 
 /*Botones*/
 .button {
-	background: #1E87E9;
 	padding: 10px 15px;
 	border-radius: 10px;
 	display: inline-block;
 }
 
-.button a, .editar, .eliminar {
-	font-size: 1.1em;
+.button:hover {	
+	cursor: pointer;
+}
+
+#registrar, #editar, #eliminar {
 	text-transform: uppercase;
 	color: white;
 	font-family: Arial, Verdana, 'Times New Roman';
 }
 
-.button:hover {
-	background-color: #4E9DE6;
-	cursor: pointer;
-}
 
-div.registrar {
+#registrar {
+	font-size: 1.1em;
 	margin-top: 5px;
+	background: #1E87E9;
 }
 
-.editar, .eliminar {
+#registrar:hover, #editar:hover {
+	background-color: #4E9DE6;
+}
+
+
+#registar, #editar {
+	background: #1E87E9;
+}
+
+#editar, #eliminar {
 	font-size: 14px;
 	padding: 10px 15px;
 	text-transform: capitalize;
 }
 
-.eliminar {
+#eliminar {
 	background-color: #FC1E1E;
 }
 
-.eliminar:hover {
+#eliminar:hover {
 	background-color: #FF4343;
 }
 
 /*Tabla de datos registrados*/
 table {
 	margin-top: 10px;
-	width: 50%;
 }
+
 table thead tr th {
 	font-size: 16px;
 	text-transform: capitalize;
@@ -226,16 +236,15 @@ nav.navegacion-vertical ul li{
 
 nav.navegacion-vertical ul li:nth-child(4) { border:none;}
 
-nav.navegacion-vertical ul li:hover {
+nav.navegacion-vertical ul li:hover, .pagination a:hover {
 	background-color: #1E87E9;
 	color: white;
 }
 
 .activo:not(.active) {
-	background-color: #1E87E9;
-	color: white;
 	cursor: default;
 }
+
 /* Pagination links */
 .pagination { width: 50%; }
 
@@ -246,19 +255,6 @@ nav.navegacion-vertical ul li:hover {
 	transition: background-color .3s;
 	margin: 15px 5px;
 	border-radius:40%;
-}
-
-/* Style the active/current link */
-.active {
-	background-color: dodgerblue;
-	color: white;
-}
-
-
-/* Add a blue background color on mouse-over */
-.pagination a:hover:not(.active) {
-	background-color: #1E87E9; 
-	color: white;
 }
 
 

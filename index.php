@@ -9,6 +9,8 @@
 		</div>
 
 		<?php include_once 'includes/templates/tablas.php' ?>
+
+		<?php include_once 'includes/templates/cuestionarios.php'; ?>
 	
 		<?php include_once 'includes/templates/navegacion-vertical.php'; ?>
 

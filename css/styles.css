@@ -117,7 +117,7 @@ div.contenido, div#contenido-tabla {
 	height: 1000px;
 }
 
-div#contenido-tabla div.encabezado-tabla h2 {
+div.encabezado-tabla h2 {
 	width: 95%;
 	font-size: 1.7em;
 	border-bottom: 1px solid #D5D5D5;
@@ -270,4 +270,61 @@ footer {
 footer p {
 	color: white;
 	text-align:center; 
+}
+
+/* Formularios */
+div.contenido form{
+    width: 90%;
+    border: 5px solid #1E87E9;
+    padding: 20px 25px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+div.contenido form h2 {	margin-bottom: 20px;}
+
+div.contenido form div.campo{
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div.campo label{
+	display: block;
+	margin-left: 25%;
+	margin-bottom: 5px;
+	font-size: 18px;
+	text-align: left;
+}
+
+div.campo input{
+    margin-bottom: 5px;
+    width: 50%;
+    padding: 5px 15px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+div.campo  p {
+	display: inline-block;
+	margin: 8px 10px auto 10px;
+}
+
+div.campo p input[type="radio"] {
+	width: 100%;
+	float: left;
+}
+
+input[type="submit"]{
+    background: #1E87E9;
+    color: white;
+    width: 60%;
+    text-align: center;
+    border: none;
+    padding: 10px;
+}
+
+input[type="submit"]:hover{
+    background: #4E9DE6;
+    cursor: pointer;
 }

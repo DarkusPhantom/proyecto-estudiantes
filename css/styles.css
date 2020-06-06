@@ -115,6 +115,7 @@ div.contenido, div#contenido-tabla {
 	float: right;
 	width: 78%;
 	height: 1000px;
+	max-height: 1000px;
 }
 
 div.encabezado-tabla h2 {

@@ -8,9 +8,7 @@
 			<p class="presentacion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam neque non blanditiis at consectetur sint aspernatur consequuntur, sequi illo ex praesentium ullam similique quo distinctio earum autem, vel placeat architecto?</p>
 		</div>
 
-		<?php include_once 'includes/templates/tablas.php' ?>
-
-		<?php include_once 'includes/templates/cuestionarios.php'; ?>
+		<?php include_once 'tablas.php' ?>
 	
 		<?php include_once 'includes/templates/navegacion-vertical.php'; ?>
 

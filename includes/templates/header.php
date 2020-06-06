@@ -12,11 +12,11 @@
 			<div class="logo">
 				<h2><a href="index.php">Universidad de Carabobo</a></h2>
 			</div>
-			<nav class="navegacion-principal clearfix">	
-				<a href="#">Inicio</a>
-				<a href="#">Informacion</a>
-				<a href="#">Contacto</a>
-				<a href="#">Ayuda</a>
+			<nav class="navegacion-principal clearfix" id="navegacion-principal">	
+				<a href="index.php">Inicio</a>
+				<a href="">Informacion</a>
+				<a href="">Contacto</a>
+				<a href="">Ayuda</a>
 			</nav>
 		</div>
 	</header>

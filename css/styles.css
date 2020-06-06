@@ -209,7 +209,7 @@ table tr:nth-child(4n-2) {
   background-color: #dcdcdc;
 }
 
-/*-------------Aside--------*/
+/*Barra de Menu Lateral*/
 nav.navegacion-vertical {
 	background-color: #EDEBEB;
 	float: left;
@@ -217,32 +217,29 @@ nav.navegacion-vertical {
 	height: 100%; /* Full-height: remove this if you want "auto" height */
 	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
 	left: 0;
-	top: 47px;
+	top: 7.1%;
+	padding-top: 10px;
 }
 
-/*Barra de Menu Lateral*/
-nav.navegacion-vertical ul{	margin-top: 10px;}
-
-nav.navegacion-vertical ul li{
+nav.navegacion-vertical a.tablinks{
 	font-size: 1.2em;
 	font-family: Arial, Verdana;
 	border-bottom: .5px solid #1E87E9;
-	color: #1E87E9;
 	padding: 15px 20px;
 	display: block;  
 	transition: all .3s ease;
 	cursor: pointer;
 }
 
-nav.navegacion-vertical ul li:nth-child(4) { border:none;}
-
-nav.navegacion-vertical ul li:hover, .pagination a:hover {
-	background-color: #1E87E9;
-	color: white;
+nav.navegacion-vertical a.tablinks:not(.active){
+	color: #1E87E9;
 }
 
-.activo:not(.active) {
-	cursor: default;
+nav.navegacion-vertical a.tablinks:nth-child(4) { border:none;}
+
+nav.navegacion-vertical a.tablinks:hover, .pagination a:hover, .active {
+	background-color: #1E87E9;
+	color: white;
 }
 
 /* Pagination links */

@@ -1,8 +1,6 @@
-<nav class="navegacion-vertical">
-	<ul>
-		<li class="tablinks"> Estudiantes</li>
-		<li class="tablinks">Profesores</li>
-		<li class="tablinks">Asignaturas</li>
-		<li class="tablinks">Notas</li>
-	</ul>
+<nav class="navegacion-vertical" id="navegacion-vertical">
+	<a class="tablinks">Estudiantes</a>
+	<a class="tablinks">Profesores</a>
+	<a class="tablinks">Asignaturas</a>
+	<a class="tablinks">Notas</a>
 </nav>

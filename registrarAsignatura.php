@@ -5,7 +5,7 @@
 			<!--Cuestionario para asignatura-->
 	            <div class="" id="cuestionario_asignatura">
 	                <form action="registrarAsignatura" id="registrar_asignatura" method="post">
-	                    <h2>Asignaturas</h2>
+	                    <h2>Registrar Asignaturas</h2>
 
 	                    <div class="campo">
 	                        <label for="asignatura">Asignatura:</label>

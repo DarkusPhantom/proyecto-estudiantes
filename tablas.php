@@ -51,7 +51,7 @@
 								<td><?php echo $estudiantes['sexo']; ?></td>
 								<td><?php echo $estudiantes['carrera']; ?></td>
 								<td><?php echo $estudiantes['semestre']; ?></td>
-								<td><a id="editar" class="button">Editar</a></td>
+								<td><a href="modificarEstudiantes.php" id="editar" class="button">Editar</a></td>
 								<td><a id="eliminar" class="button">Eliminar</a></td>
 							</tr>		 
 					<?php endwhile; //Fin While ?>				
@@ -103,7 +103,7 @@
 								<td><?php echo utf8_encode($docentes['nombre-d']); ?></td>
 								<td><?php echo utf8_encode($docentes['apellido-d']); ?></td>
 								<td><?php echo $docentes['sexo-d']; ?></td>
-								<td><a id="editar" class="button">Editar</a></td>
+								<td><a href="modificarProfesores.php" id="editar" class="button">Editar</a></td>
 								<td><a id="eliminar" class="button">Eliminar</a></td>
 							</tr>		 
 					<?php  endwhile; //Fin While ?>				

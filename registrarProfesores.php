@@ -5,7 +5,7 @@
     		<!--Cuestionario para profesores-->
             <div class="" id="cuestionario_profesores">
                 <form action="registrarProfesores.php" id="registrar_profesores">
-                    <h2>Profesores</h2>
+                    <h2>Registrar Profesores</h2>
 
                     <div class="campo">
                         <label for="nombre">Nombre:</label>

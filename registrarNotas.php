@@ -5,7 +5,7 @@
 			<!--cuestionario notas-->
 	            <div id="cuestionario_notas">
 	                <form action="registrarNotas" id="registrar_notas" method="post">
-	                    <h2>Notas</h2>
+	                    <h2>Registrar Notas</h2>
 
 	                   <div class="campo">
 	                        <label for="codigo">Código:</label>

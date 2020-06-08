@@ -5,21 +5,23 @@
     		<!--Cuestionario para profesores-->
             <div class="" id="cuestionario_profesores">
                 <form action="index.php" id="registrar_profesores">
-                    <h2>Profesores</h2>
+                    <h2>Modificar Profesores</h2>
 
+                    <p>Seleccione un campo que desee modificar:</p>
+                    
                     <div class="campo">
                         <label for="nombre">Nombre:</label>
-                        <input type="text" name="Nombre" id="nombre" required placeholder="Nombre...">
+                        <input type="text" name="Nombre" id="nombre" placeholder="Nombre...">
                     </div>    
                     
                     <div class="campo">
                         <label for="apellido">Apellido:</label>
-                        <input type="text" name="Apellido" id="apellido" required placeholder="Apellido...">
+                        <input type="text" name="Apellido" id="apellido" placeholder="Apellido...">
                     </div>
              
                     <div class="campo">
                         <label for="cedula">Cédula:</label>
-                        <input type="text" name="Cedula" id="cedula" required placeholder="Cedula...">
+                        <input type="text" name="Cedula" id="cedula" placeholder="Cedula...">
                     </div>
 
                     <div class="campo">

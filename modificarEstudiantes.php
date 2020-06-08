@@ -5,26 +5,27 @@
             <!--Cuestionario para Estudiantes-->
             <div class="" id="cuestionario_estudiante">
                     <form action="crearEstudiantes.php" id="registrar_estudiantes" method="post">
-                        <h2>Estudiantes</h2>
+                        <h2>Modificar Estudiantes</h2>
 
+                        <p>Seleccione un campo que desee modificar:</p>
                         <div class="campo">
                             <label for="nombre">Nombre:</label>
-                            <input type="text" name="nombre" id="nombre" required placeholder="Nombre...">
+                            <input type="text" name="nombre" id="nombre"  placeholder="Nombre...">
                         </div>    
                         
                         <div class="campo">
                             <label for="apellido">Apellido:</label>
-                            <input type="text" name="apellido" id="apellido" required placeholder="Apellido...">
+                            <input type="text" name="apellido" id="apellido"  placeholder="Apellido...">
                         </div>
 
                         <div class="campo">
                             <label for="cedula">Cédula:</label>
-                            <input type="text" name="cedula" id="cedula" required placeholder="Cedula...">
+                            <input type="text" name="cedula" id="cedula"  placeholder="Cedula...">
                         </div>
                         
                         <div class="campo">
                             <label for="edad">Edad:</label>
-                            <input type="text" name="edad" id="edad" placeholder="Edad.." required>
+                            <input type="text" name="edad" id="edad" placeholder="Edad.." >
                         </div>
 
                         <div class="campo">
@@ -48,7 +49,7 @@
 
                         <div class="campo">
                             <label for="semestre">Semestre:</label>
-                            <input type="number" name="semestre" id="semestre" min="1" max="10" required placeholder="Semestre...">
+                            <input type="number" name="semestre" id="semestre" min="1" max="10" placeholder="Semestre...">
                         </div>
 
                         <input type="submit" value="Enviar">

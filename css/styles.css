@@ -102,6 +102,11 @@ div.introduccion p {
 	text-indent: 50px; /*Le añade una tabulacion de 50px*/
 }
 
+/*Slider*/
+div.cuadrito {
+	background: black;
+}
+
 /*Cuerpo de la pagina*/
 div.contenedor {
 	width: 100%;

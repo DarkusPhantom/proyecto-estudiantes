@@ -4,7 +4,7 @@
         <div class="contenido" id="registro">
     		<!--Cuestionario para profesores-->
             <div class="" id="cuestionario_profesores">
-                <form action="index.php" id="registrar_profesores">
+                <form action="registrarProfesores.php" id="registrar_profesores">
                     <h2>Profesores</h2>
 
                     <div class="campo">

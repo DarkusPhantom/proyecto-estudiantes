@@ -4,7 +4,7 @@
         <div class="contenido" id="registro">
             <!--Cuestionario para Estudiantes-->
             <div class="" id="cuestionario_estudiante">
-                    <form action="crearEstudiantes.php" id="registrar_estudiantes" method="post">
+                    <form action="registrarEstudiantes.php" id="registrar_estudiantes" method="post">
                         <h2>Estudiantes</h2>
 
                         <div class="campo">

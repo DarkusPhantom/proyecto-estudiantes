@@ -11,7 +11,7 @@
 			</div>
 			
 			<!--Boton de registro-->
-			<a href="crearEstudiantes.php" id="registrar" class="button">Registrar</a>
+			<a href="registrarEstudiantes.php" id="registrar" class="button">Registrar</a>
 				
 			<div class="buscador">
 				<label for="buscar-estudiante" class="busqueda-estudiante">Buscar:</label>
@@ -68,7 +68,7 @@
 			</div>
 			
 			<!--Boton de registro-->
-			<a href="crearProfesores.php" id="registrar" class="button">Registrar</a>
+			<a href="registrarProfesores.php" id="registrar" class="button">Registrar</a>
 				
 			<div class="buscador">
 				<label for="buscar-profesores" class="busqueda-profesores">Buscar:</label>

@@ -1,7 +1,6 @@
+
 		<footer>
 			<p>Todos los derechos reservados por Luis Rodriguez y Jhonattan Garcia &copy;</p>
-		</footer>	
-	</div>
-
+		</footer>
 	<script src="js/main.js"></script>
 </html>

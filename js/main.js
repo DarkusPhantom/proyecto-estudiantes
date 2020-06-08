@@ -2,6 +2,7 @@
 let nav_vertical = document.getElementById('navegacion-vertical');
 let inicio = document.getElementById('navegacion-principal').children[0];
 const info_principal = document.getElementById('info-principal');
+//const cuadrito = document.getElementById('cuadrito');
 const contenido_tabla = document.getElementById('contenido-tabla');
 const registro = document.getElementById('registro');
 
@@ -25,7 +26,7 @@ function mostrarTabla(evt) {
   contenido_tabla.classList.forEach(function(clase){
     if (clase === 'ocultar' && evt.target != nav_vertical) {
       mostrarElemento(contenido_tabla);
-      ocultarElemento(info_principal);
+      ocultarElemento(info_principal.parentElement);
     }
   });
 

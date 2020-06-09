@@ -73,44 +73,64 @@ nav.navegacion-principal a:hover {
 }
 
 /*Intro de la pagina en index.html*/
-.presentacion{
+div#inicio h2{
+	font-size: 2.1em;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 5px
+}
+
+div.presentacion {
 	display: block;
-	margin-top: 20px;
+	margin: 3%;
 	background: #dedede;
-	color: black;
 	padding: 20px;
 	width: 80%;
+}
+
+div.presentacion h3 {
+	font-size: 1.5em;
+	text-transform: uppercase;
+	margin: 10px auto 15px 20px;
+}
+
+div.presentacion p {
+	font-size: 18px;
 	font-family: Arial, Helvetica, sans-serif;
-}
-
-div.introduccion {
-	padding: auto;
-}
-
-div.introduccion h2{
-	margin-bottom: 10px;	
-	font-size: 2.3em;
-	/*font-family: ; Colocarle fuente*/
-	text-align: center;
-}
-
-div.introduccion p {
 	text-align: justify;
-	padding: 10px 15px;
-	box-shadow: 0px 30px 30px #666;
-	border: 5px solid #1E87E9;
-	text-indent: 50px; /*Le añade una tabulacion de 50px*/
+	text-indent: 5%;
+	line-height: 1.7;
 }
 
 /*Slider*/
-div#cuadrito {
-	background-color: black;
+div#slidebar {
+	background-color: #1E87E9;
+	width: 95%;
+	padding: 150px;
+	margin: 10px auto;
+	box-shadow: 0px 0px 30px #666;
 }
+
+/*Barritas
+#barritas {
+	width: 60%;
+	text-align: right;
+	margin-top: 12px;
+	float: right;
+}
+
+#barritas span{
+	display: block;
+	background-color: #fff;
+	height: 100%;
+	border-radius: 50px #fff;
+}
+*/
 
 /*Cuerpo de la pagina*/
 div.contenedor {
 	width: 100%;
-	height: 1000px;
+	height: 100%;
 	margin-top: 30px;
 }
 
@@ -247,7 +267,7 @@ nav.navegacion-vertical a.tablinks:hover, .pagination a:hover, .active {
 }
 
 /* Pagination links */
-.pagination { width: 50%; }
+.pagination { width: 50%; margin-left: 5%;}
 
 .pagination a {
 	color: #1E87E9;
@@ -282,7 +302,16 @@ div.contenido form{
     text-align: center;
 }
 
-div.contenido form h2 {	margin-bottom: 20px;}
+div.contenido form h2 {	
+	margin-bottom: 20px;
+	font-size: 2em;
+}
+
+div.contenido form p {
+	margin-bottom: 10px;
+	font-size: 20px;
+
+}
 
 div.contenido form div.campo{
     display: block;
@@ -306,9 +335,10 @@ div.campo input{
     border-bottom: 1px solid black;
 }
 
-div.campo  p {
+div.campo p {
 	display: inline-block;
 	margin: 8px 10px auto 10px;
+	font-size: 18px!important;
 }
 
 div.campo p input[type="radio"] {

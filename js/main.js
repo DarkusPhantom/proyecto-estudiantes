@@ -1,8 +1,7 @@
 //variables
 let nav_vertical = document.getElementById('navegacion-vertical');
 let inicio = document.getElementById('navegacion-principal').children[0];
-const info_principal = document.getElementById('info-principal');
-//const cuadrito = document.getElementById('cuadrito');
+const contenido = document.getElementsByClassName('contenedor')[0].children[0];
 const contenido_tabla = document.getElementById('contenido-tabla');
 const registro = document.getElementById('registro');
 
@@ -26,7 +25,7 @@ function mostrarTabla(evt) {
   contenido_tabla.classList.forEach(function(clase){
     if (clase === 'ocultar' && evt.target != nav_vertical) {
       mostrarElemento(contenido_tabla);
-      ocultarElemento(info_principal.parentElement);
+      ocultarElemento(contenido);
     }
   });
 
@@ -41,33 +40,6 @@ function mostrarTabla(evt) {
       }
     }
   }
-
-
-
-
-
-
-/*
-  //MUestra la tabla y oculta el contenido de inicio
-  contenido_tabla.classList.forEach(function(clase){
-    if (clase === 'ocultar' && evt.target != nav_vertical) {
-      mostrarElemento(contenido_tabla);
-      ocultarElemento(info_principal);
-    }
-  });
-
-  if (evt.target != nav_vertical) {
-    for (var i = 0; i < tablinks.length; i++) {
-      if (tablinks[i] === evt.target) {
-        mostrarElemento(tabla_datos[i]);
-        elementoActivo(tablinks[i]);
-      } else {
-        ocultarElemento(tabla_datos[i]);
-        elementoNoActivo(tablinks[i]);
-      }
-    }
-  }
-  */
 }
 
 //Muestra el elemento

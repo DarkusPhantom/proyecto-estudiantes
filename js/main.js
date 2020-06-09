@@ -1,9 +1,10 @@
 //variables
-let nav_vertical = document.getElementById('navegacion-vertical');
-let inicio = document.getElementById('navegacion-principal').children[0];
+const nav_vertical = document.getElementById('navegacion-vertical');
 const contenido = document.getElementsByClassName('contenedor')[0].children[0];
 const contenido_tabla = document.getElementById('contenido-tabla');
 const registro = document.getElementById('registro');
+
+
 
 //Event Listener
 //Muestra la tabla al hacer click en el nav-vertical
@@ -15,7 +16,7 @@ nav_vertical.addEventListener('click', mostrarTabla);
 
 //Muestra la tabla de datos
 function mostrarTabla(evt) {
-  evt.preventDefault();
+  evt.preventDefault(); //Previene las acciones. En este caso el "href" del tag "a"
 
   let tablinks = document.getElementsByClassName('tablinks'),
       tabla_datos = document.getElementsByClassName('tabla_datos');
@@ -29,7 +30,7 @@ function mostrarTabla(evt) {
     }
   });
 
-  if (evt.target != nav_vertical) {
+  if (evt.target != nav_vertical) {//Si la seleccion es diferente a la navegacion vertical...
     for (var i = 0; i < tablinks.length; i++) {
       if (tablinks[i] === evt.target) {
         mostrarElemento(tabla_datos[i]);
@@ -52,13 +53,13 @@ function ocultarElemento(elemento) {
   elemento.classList.add('ocultar');
 }
 
-//Elemento activo
+//El elemento seleccionado esta activo
 function elementoActivo(elemento) {
   elemento.classList.add('active');
   elemento.style.cursor = "default";
 }
 
-//Quita el elemento activo
+//Quita el elemento que no este activo
 function elementoNoActivo(elemento) {
   elemento.classList.remove('active');
   elemento.style.cursor = "pointer";

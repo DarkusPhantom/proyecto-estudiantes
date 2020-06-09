@@ -82,10 +82,10 @@ div#inicio h2{
 
 div.presentacion {
 	display: block;
-	margin: 3%;
+	margin: 3% 5%;
 	background: #dedede;
 	padding: 20px;
-	width: 80%;
+	width: 90%;
 }
 
 div.presentacion h3 {
@@ -163,6 +163,7 @@ div.encabezado-tabla h2 {
 	padding: 10px 15px;
 	border-radius: 10px;
 	display: inline-block;
+	width: 100%;
 }
 
 .button:hover {	
@@ -177,6 +178,7 @@ div.encabezado-tabla h2 {
 
 
 #registrar {
+	width: 13%!important;
 	font-size: 1.1em;
 	margin-top: 5px;
 	background: #1E87E9;
@@ -208,7 +210,7 @@ div.encabezado-tabla h2 {
 /*Tabla de datos registrados*/
 table {
 	margin: 10px auto 0 10px;
-	width: 60%;
+	width: 95%;
 }
 
 table thead tr th {
@@ -256,7 +258,8 @@ nav.navegacion-vertical a.tablinks{
 	cursor: pointer;
 }
 
-nav.navegacion-vertical a.tablinks:not(.active){
+nav.navegacion-vertical a.tablinks:not(.active), 
+.pagination a:not(.active){
 	color: #1E87E9;
 }
 
@@ -271,7 +274,6 @@ nav.navegacion-vertical a.tablinks:hover, .pagination a:hover, .active {
 .pagination { width: 50%; margin-left: 5%;}
 
 .pagination a {
-	color: #1E87E9;
 	float: left;
 	padding: 8px 16px;
 	transition: background-color .3s;

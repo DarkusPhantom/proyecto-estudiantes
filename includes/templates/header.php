@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Universidad de Carabobo</title>
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/slidershow.css">
 </head>
 <body>
 	<header>

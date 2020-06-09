@@ -3,14 +3,10 @@
 	<div class="contenedor">
 		<div class="contenido" id="inicio">
 			<h2>Bienvenido a la Universidad de Carabobo</h2>
-			<div id="slidebar">
-				<img src="" alt="">
-			</div>
-			<!--<div id="barrita">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>-->
+			<!-- Slideshow container -->
+			<?php include_once 'includes/templates/slidershow.php'; ?>
+
+
 			<div id="info-principal">
 				<div class="presentacion">
 					<h3>titulo 1</h3>

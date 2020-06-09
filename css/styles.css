@@ -77,7 +77,8 @@ div#inicio h2{
 	font-size: 2.1em;
 	text-align: center;
 	text-transform: uppercase;
-	letter-spacing: 5px
+	letter-spacing: 3px;
+	margin-bottom: 15px;
 }
 
 div.presentacion {
@@ -102,30 +103,10 @@ div.presentacion p {
 	line-height: 1.7;
 }
 
-/*Slider*/
-div#slidebar {
-	background-color: #1E87E9;
-	width: 95%;
-	padding: 150px;
-	margin: 10px auto;
-	box-shadow: 0px 0px 15px #666;
+/*Slideshow*/
+#jssor_1 {
+	box-shadow: 0 10px 15px #666;
 }
-
-/*Barritas
-#barritas {
-	width: 60%;
-	text-align: right;
-	margin-top: 12px;
-	float: right;
-}
-
-#barritas span{
-	display: block;
-	background-color: #fff;
-	height: 100%;
-	border-radius: 50px #fff;
-}
-*/
 
 /*Cuerpo de la pagina*/
 div.contenedor {

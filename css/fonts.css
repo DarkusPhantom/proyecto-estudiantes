@@ -1,0 +1,16 @@
+@font-face {
+      font-family: "Bitstream Vera Serif Bold";
+      src: url("http://developer.mozilla.org/@api/deki/files/2934/=VeraSeBd.ttf");
+
+      font-family: "Cairo";
+      src: url("../fonts/Cairo-Regular.tff");
+
+      font-family: "BreeSerif";
+      src: url("../fonts/BreeSerif-Regular.tff");
+
+      font-family: "Kanit";
+      src: url("../fonts/Kanit-Rgular.tff");
+
+      font-family: "Kanit-Light";
+      src: url("../fonts/Kanit-Light.tff");
+    }

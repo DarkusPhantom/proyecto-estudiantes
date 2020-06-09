@@ -19,6 +19,8 @@ a{
 
 .ocultar { display: none; }
 
+/*Importaciones*/
+@import url("fonts.css");
 
 /*------Header------*/
 header {
@@ -97,7 +99,7 @@ div.presentacion h3 {
 
 div.presentacion p {
 	font-size: 18px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Cairo", Helvetica, sans-serif;
 	text-align: justify;
 	text-indent: 5%;
 	line-height: 1.7;

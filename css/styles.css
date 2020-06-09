@@ -108,7 +108,7 @@ div#slidebar {
 	width: 95%;
 	padding: 150px;
 	margin: 10px auto;
-	box-shadow: 0px 0px 30px #666;
+	box-shadow: 0px 0px 15px #666;
 }
 
 /*Barritas
@@ -207,7 +207,8 @@ div.encabezado-tabla h2 {
 
 /*Tabla de datos registrados*/
 table {
-	margin-top: 10px;
+	margin: 10px auto 0 10px;
+	width: 60%;
 }
 
 table thead tr th {
@@ -225,7 +226,7 @@ table tbody tr td {
 	font-size: 14px;
 	font-family: Verdana, Arial;
 	text-transform: capitalize;
-
+	line-height: 1.5;
 }
 
 table tr:nth-child(4n),

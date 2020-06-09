@@ -1,0 +1,1 @@
+INSERT INTO `imparte` (`ci-d`, `codigo-c`, `turno`) VALUES ('20100593', 'CAO802', 'Tarde'), ('20428901', 'CAO802', 'Dia'), ('20423901', 'TRO101', 'Tarde');

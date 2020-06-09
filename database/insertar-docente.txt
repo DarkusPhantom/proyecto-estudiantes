@@ -1,0 +1,5 @@
+INSERT INTO `docente` (`ci-d`, `nombre-d`, `apellido-d`, `sexo-d`) VALUES ('20100593', 'Freddy ', 'Vega', 'Masculino'), ('20428901', 'Alvaro', 'Pérez', 'Masculino'), ('20100593', 'Patricia ', 'Mercado', 'Masculino'), ('20423901', 'Genesis Elizabeth', 'Heredia', 'Femenino'), ('3593078', 'Raimunndo', 'Rodriguez', 'Masculino'), ('4128999', 'Beatriz', 'Boett', 'Femenino'), ('4102970', 'Adolfo', 'Silva', 'Masculino'), ('5192872', 'Alejandrita Estrella', 'Rivas Gonzalez', 'Femenino'), ('4812952', 'Sonia', 'Lepage', 'Femenino'), ('9150837', 'Luna Scarlet', 'Tovar', 'Femenino'), ('5201893', 'Jose Enrique', 'Nieves', 'Masculino'), ('7489221', 'Antonio', 'Machado', 'Masculino'), ('9182571', 'Joseph', 'Joestar', 'Masculino'), ('8127598', 'Sara', 'Lepage', 'Femenino');
+
+codigo php
+
+$sql = "INSERT INTO `docente` (`ci-d`, `nombre-d`, `apellido-d`, `sexo-d`) VALUES (?,?,?,?)";

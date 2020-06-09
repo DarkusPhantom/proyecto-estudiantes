@@ -1,0 +1,1 @@
+INSERT INTO `nota` (`ci-a`, `codigo-c`, `calificacion`) VALUES ('27908243', 'CAO101', '20'), ('26914782', 'TRO101', '15');

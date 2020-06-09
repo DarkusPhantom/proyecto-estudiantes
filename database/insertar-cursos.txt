@@ -1,0 +1,1 @@
+INSERT INTO `curso` (`codigo`, `nombre-c`, `nivel`) VALUES ('CAO101', 'Calculo I', '1'), ('CAO802', 'Desarrollo de Aplicaciones Web', '8'), ('CAO303', 'Programación I', '3');

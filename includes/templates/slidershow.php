@@ -1,4 +1,5 @@
- <!-- #region Jssor Slider Begin -->
+<div class="slidebar">
+    <!-- #region Jssor Slider Begin -->
     <!-- Generator: Jssor Slider Composer -->
     <!-- Source: https://www.jssor.com/demos/banner-rotator.slider/=edit -->
     <script src="js/jssor.slider-28.0.0.min.js" type="text/javascript"></script>
@@ -142,3 +143,4 @@
     <script type="text/javascript">jssor_1_slider_init();
     </script>
     <!-- #endregion Jssor Slider End -->
+</div>

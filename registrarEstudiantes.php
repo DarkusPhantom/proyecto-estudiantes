@@ -51,8 +51,40 @@
                             <input type="number" name="semestre" id="semestre" min="1" max="10" required placeholder="Semestre...">
                         </div>
 
-                        <input type="submit" value="Enviar">
+                        <input type="submit" name="submit" value="Enviar">
                     </form>
+                    <?php 
+                        if(isset($_POST['submit'])): 
+                            $nombre = $_POST['nombre'];
+                            $apellido = $_POST['apellido'];
+                            $edad = $_POST['edad'];
+                            $cedula = $_POST['cedula'];
+                            $genero = $_POST['genero'];
+                            $carrera = $_POST['carreras'];
+                            $semestre = $_POST['semestre'];
+
+                            try {
+                                require_once 'includes/functions/bd_conexion.php';
+                                $stmt = $conn->prepare("INSERT INTO `alumno` (`ci`, `nombre`, `apellido`, `edad`, `sexo`, `carrera`, `semestre`) VALUES (?,?,?,?,?,?,?)");
+                                $stmt->bind_param("sssissi", $cedula, $nombre, $apellido, $edad, $genero, $carrera, $semestre);
+                                if ($stmt->error) {
+                                  echo "<div class='mensaje error'>";
+                                  echo "❌Error❌";
+                                  echo "</div>";
+                                }else{
+                                    echo "<div class='mensaje'>";
+                                    echo "<h3>✅ Se ha subido correctamente</h3><br>";
+                                    echo "<p>Nombre: " . $nombre . ", Apellido: ". $apellido . ", Edad: " . $edad . ", Cédula: " . $cedula . ", Género: " . $genero . ", Carrera: " . $carrera . ", Semestre: " . $semestre . "</p>";
+                                    echo "</div>";  
+                                }
+                                $stmt->execute();
+                                $stmt->close();
+                                $conn->close(); 
+                              } catch (Exception $e) {
+                                echo "Error" . $e->getMessage();
+                              }                         
+                        endif;
+                    ?>
             </div>
         </div>
     </div>

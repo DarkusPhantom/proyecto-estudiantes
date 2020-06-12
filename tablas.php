@@ -1,5 +1,28 @@
+<?php 
+	if (isset($_GET['ci'])) {
+		$ci_estudiante = $_GET['ci'];
+	} elseif (isset($_GET['ci-d'])){
+		$ci_profesor = $_GET['ci-d'];
+	}
 
-<?php include_once 'includes/templates/header.php'; ?>
+	if (isset($ci)) {
+		try {
+			require_once('funciones/bd_conexion.php');
+			$sql = "DELETE FROM `alumnos` WHERE `ci` = '{$ci_estudiante}' ";
+			$resultado = $conn->query($sql);
+		} catch (Exception $e) {
+			$error = $e->getMessage();
+		}
+	} elseif (isset($ci_profesor)) {
+		try {
+			require_once('funciones/bd_conexion.php');
+			$sql = "DELETE FROM `alumnos` WHERE `ci-d` = '{$ci_profesor}' ";
+			$resultado = $conn->query($sql);
+		} catch (Exception $e) {
+			$error = $e->getMessage();
+		}
+	}
+?>
 
 	<div class="contenido ocultar" id="contenido-tabla">
 
@@ -51,8 +74,8 @@
 								<td><?php echo $estudiantes['sexo']; ?></td>
 								<td><?php echo $estudiantes['carrera']; ?></td>
 								<td><?php echo $estudiantes['semestre']; ?></td>
-								<td><a href="modificarEstudiantes.php" id="editar" class="button">Editar</a></td>
-								<td><a id="eliminar" class="button">Eliminar</a></td>
+								<td><a href="modificarEstudiantes.php?ci=<?php echo $estudiantes['ci']?>" id="editar" class="button">Editar</a></td>
+								<td><a href="index.php?id=<?php echo $estudiantes['ci'] ?>" id="eliminar" class="button">Eliminar</a></td>
 							</tr>		 
 					<?php endwhile; //Fin While ?>				
 				</tbody>
@@ -104,7 +127,7 @@
 								<td><?php echo utf8_encode($docentes['apellido-d']); ?></td>
 								<td><?php echo $docentes['sexo-d']; ?></td>
 								<td><a href="modificarProfesores.php" id="editar" class="button">Editar</a></td>
-								<td><a id="eliminar" class="button">Eliminar</a></td>
+								<td><a href="index.php?id=<?php echo $docentes['ci-d'] ?>" id="eliminar" class="button">Eliminar</a></td>
 							</tr>		 
 					<?php  endwhile; //Fin While ?>				
 				</tbody>
@@ -211,7 +234,3 @@
 	
         <?php include_once 'includes/templates/paginacion.php'; ?>
     </div>
-
-<?php include_once 'includes/templates/navegacion-vertical.php'; ?>
-
-<?php include_once 'includes/templates/footer.php'; ?>
